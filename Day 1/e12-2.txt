@@ -1,0 +1,13 @@
+start
+  num<-0(integer);
+  i<- 1(integer);
+  sign<--1(integer);
+
+  accept num;
+
+  while(i<num)
+	display i;
+	i++;
+	i=i*sign;
+  end while;
+stop;

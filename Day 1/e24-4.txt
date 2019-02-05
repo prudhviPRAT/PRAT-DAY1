@@ -1,0 +1,20 @@
+start
+  numRows<-0(integer);
+  i<-0(integer);
+  j<-0(integer);
+  num1<-1(integer);
+  num2<-1(integer);
+
+  accept numRows;
+
+  display num1;
+  for i<-1 to numRows
+	for j<-0 to i
+		display num2;
+		num1<-num2;
+		num2<-num1+num2;
+	end for;
+	display;
+  end for;
+stop;
+		

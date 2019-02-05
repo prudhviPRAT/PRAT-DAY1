@@ -1,0 +1,11 @@
+start
+  doubleNum<-0.0(double);
+  numeric<-doubleNum(integer);
+  fraction<-0.0(double);
+
+  fraction<-doubleNum-numeric;
+
+  display numeric;
+  display fraction;
+
+stop;

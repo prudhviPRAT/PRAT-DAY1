@@ -1,0 +1,42 @@
+start
+  m<-0(integer);
+  n<-0(integer);
+  i<-0(integer);
+  n<-0(integer);
+  accept m,n;
+
+  DECLARE ARRAY mnMatrix of [m,n]integer;
+
+  for i<-0 to m
+	for j<-0 to n
+		accept mnMatrix[i,j];
+	end for;
+  end for;
+
+  for i<-0 to m
+	for j<-0 to n
+		display mnMatrix[i,j];
+	end for;
+  end for;
+
+  for i<-0 to m
+	for j<-0 to n
+		if(i>j) then
+			temp<-mnMatrix[i,j];
+			mnMatrix[i,j]<-mnMatrix[j,i];
+			mnMatrix[j,i]<-temp;
+		end if;
+	end for;
+  end for;
+
+  for i<-0 to m
+	for j<-0 to n
+		display mnMatrix[i,j];
+	end for;
+  end for;
+stop;
+  
+	
+	
+			
+	

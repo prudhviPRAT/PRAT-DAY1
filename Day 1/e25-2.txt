@@ -1,0 +1,22 @@
+start
+  numRows<-0(integer);
+  i<-1(integer);
+  j<-0(integer);
+  num<-1(integer);
+  fact<-1(integer);
+
+  accept numRows;
+
+  display num;
+  display;
+  for i<-1 to numRows
+	for j<-0 to i
+		while(num>0)
+			fact<-fact*num;
+			display fact;
+			num<-num+1;
+		end while;
+	end for;
+	display;
+  end for;
+stop;

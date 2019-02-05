@@ -1,0 +1,36 @@
+start
+  n<-0(integer);
+  i<-0(integer);
+  j<-0(integer);
+
+  accept n;
+
+  DECLARE ARRAY idMatrix of [n,n] integer;
+
+  for i<-0 to n
+	for j<-0 to n
+		accept idMatrix[n,n];
+	end for;
+  end for;
+
+  i,j<-0;
+  while(i<=n && j<=n)
+	if(i==j) then 
+		if(idMatrix[i,j]==1) then
+			flag<-flag+1;
+		end if;
+	else if(i!=j) then
+		if(idMatrix[i,j]==0) then
+			flag<-flag+1;
+		end if;
+	end if;
+  end while;
+
+  if(flag==9) then
+	display "idMatrix is identity matrix";
+  else
+	display "It is not identity matrix";
+  end if;
+stop; 
+
+				

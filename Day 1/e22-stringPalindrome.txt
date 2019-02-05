@@ -1,0 +1,32 @@
+start
+  i<-0(integer);
+  j<-0(integer);
+  str<-null(String); 
+  ch<-null(char);
+
+  accept str;
+  size<-sizeOf(str);
+
+  Declare Array strArray of size char;
+  strArray<-str.toCharArray();
+  Declare Array revStrArray of size char;
+  for i<-0 to size
+	revStrArray[i]<-strArray[i];
+  end for;
+
+  while(i<j)
+	for i<-0 to size
+		ch<-strArray[i];
+		for j<-size-1 to 0[step -1]
+			strArray[i]<-strArray[j];
+			strArray[j]<-ch;
+		end for;
+	end for;
+  end while;
+
+  if(strArray==revStrArray) then
+	display "str is a palindrome String";
+  else 
+	display "str is not palindrome";
+  end if;  
+stop;

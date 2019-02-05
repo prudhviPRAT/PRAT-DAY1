@@ -1,0 +1,16 @@
+start
+  num<-0(integer);
+  res<-1(integer);
+  i<-0(integer);
+  j<-0(integer);
+
+  accept num;
+  
+  for res<-1 to num
+	i<-i+1;
+	for j<-1 to i
+		res<-res*i;
+	end for;
+  display res;
+  end for;
+stop;

@@ -1,0 +1,17 @@
+start
+  binNum<-0(integer);
+  decNum<-0(integer);
+  rem<-0(integer);
+  base<-1(integer);
+
+  accept binNum;
+
+  while(binNum>0)
+	rem<-binNum%10;
+	decNum<-decNum+rem*base;
+	decNum<-decNum/10;
+	base<-base*2;
+  end while;
+
+  display decNum;
+stop;

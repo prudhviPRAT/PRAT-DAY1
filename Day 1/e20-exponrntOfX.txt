@@ -1,0 +1,16 @@
+start
+  x<-0(integer);
+  n<-0(integer);
+  result<-1(integer);
+
+  accept x,n;
+  
+  while(n>0)
+	result<-result*x;
+	n--;
+  end while;
+
+  display result;
+stop;
+
+  

@@ -1,0 +1,47 @@
+start
+  empName<-null(String);
+  empId<-0(integer);
+  salary<-0.0(double);
+  spclAllow<-0.0(double);
+  bonusPercent<-0(integer);
+  monthlyTax<-0.0(double);
+  grossMonthlySal<-0.0(double);
+  annualSal<-0.0(double);
+  annualGrossSal<-0.0(double);
+  annualNetSal<-0.0(double);
+
+  accept empName,empId,salary,spclAllow,bonusPercent,monthlyTax;
+
+  grossMonthlySal <- salary+spclAllow;
+  annualSal <-  grossMonthlySal*12;
+  annualSal <- annualSal+annualSal*bonusPercent/100;
+  annualGrossSal <- annualSal;
+
+
+  if(monthlyTax*12 < 100000.0) then
+  	if(annualSal >200000.0 and annualSal < 500000.0) then 
+		annualSal <- annualSal*0.9;
+  	else if(annualSal > 500000.0 and annualSal < 1000000.0) then
+		annualSal <- annualSal*0.8;
+  	else if(annualSal > 1000000.0) then
+ 		annualSal <- annualSal*0.7;
+  	else 
+		annualSal<-annualSal;
+  	end if;
+  else
+	if(annualSal>300000.0 and annualSal < 500000.0) then
+		annualSal <-annualSal*0.9;
+	else if(annualSal > 500000.0 and annualSal < 1000000.0) then
+		annualSal <- annualSal*0.8;
+  	else if(annualSal > 1000000.0) then
+ 		annualSal <- annualSal*0.7;
+  	else 
+		annualSal<-annualSal;
+  	end if;
+  end if;
+
+  annualNetSal <- annualSal;
+  
+  display annualGrossSal;
+  display annualNetSal;
+stop;

@@ -1,0 +1,12 @@
+start
+  
+  num<-0(integer);
+  
+  accept num;
+  if(num%2==0) then
+	display "even number";
+  else
+	display "odd number";
+  end if;
+
+stop;

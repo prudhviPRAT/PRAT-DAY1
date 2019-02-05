@@ -1,0 +1,14 @@
+start
+  num<-0(integer);
+  res<-1(integer);
+  i<-1(integer);
+
+  accept num;
+
+  while(res<=num)
+	if(i%4!=0) then
+		res<- i*i;
+		display res;
+		i<-i+1;
+	end if;
+  end while;

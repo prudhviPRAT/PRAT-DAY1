@@ -1,0 +1,24 @@
+start
+  size<-0(integer);
+  Declare Array linSearch of size integer;
+  key<-0(integer);
+  i<-0(integer);
+  j<-0(integer);
+  flag<-0(integer);
+
+  for i<-0 to size
+	accept linSearch[i];
+  end for;
+  accept key;
+
+  i<-0;
+  while(i<size)
+	if(linSearch[i]==key) then
+		display "key found at"+i;
+		flag<-flag+1;
+	end if;
+  end while;
+  if(flag==0) then
+	display "key not found in array";
+  end if;
+stop;

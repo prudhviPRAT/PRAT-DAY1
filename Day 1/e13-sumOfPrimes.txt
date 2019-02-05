@@ -1,0 +1,22 @@
+start
+  num<-0(integer);
+  min<-0(integer);
+  max<-0(integer);
+  i<-2(integer);
+
+  accept min,max;
+
+  for num<-min to max
+	for i<-2 to num
+		if(num%i == 0) then
+			num<-num+1;
+		end if;
+		if(i==num) then
+			sum<-sum+i;
+		end if;
+	end for;
+  end for;
+
+  display sum;
+stop;
+	

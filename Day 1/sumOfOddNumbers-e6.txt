@@ -1,0 +1,14 @@
+start 
+  i<-1(integer);
+  num<-0(integer);
+  sum<-0(integer);
+
+  accept num;
+
+  while(i<=num)
+	sum <- sum+i;
+	i+2;
+  end while;
+
+  display sum;
+stop;

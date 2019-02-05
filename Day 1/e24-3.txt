@@ -1,0 +1,17 @@
+start
+  numRows<-0(integer);
+  i<-1(integer);
+  j<-1(integer);
+  num<-1(integer);
+
+  accept numRows;
+
+  for i<-1 to numRows
+	for j<-1 to i
+		display num;
+		num<-num+1;
+	end for;
+	display;
+  end for;
+stop;
+	

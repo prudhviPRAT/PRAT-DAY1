@@ -1,0 +1,29 @@
+start
+  stuName<-null(String);
+  phy<-0(integer);
+  chem<-0(integer);
+  maths<-0(integer);
+  total<-0(integer);
+  avg<-0.0(double);
+
+  accept stuName;
+  accept phy,chem,maths;
+
+  total<-phy+chem+maths;
+  avg<-total/3;
+
+  display total;
+  display avg;
+
+  if(phy>35 and chem>35 and maths>35) then
+	if(avg>=60.0) then
+		display "1st class";
+	else if(avg>=50.0 and avg<60.0)
+		display "2nd class";
+	else 
+		display "Pass";
+	end if;
+  else
+	display "Fail";
+  end if;
+stop;

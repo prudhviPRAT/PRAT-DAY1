@@ -1,0 +1,12 @@
+start
+  principle<-0.0(double);
+  ROI<-0(integer);
+  time<-0(integer);
+  simpInterest<-0.0(double);
+
+  accept principle,ROI,time;
+
+  simpInterest<-principle*ROI*time/100;
+
+  display simpInterest;
+stop;

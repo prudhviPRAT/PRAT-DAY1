@@ -1,0 +1,19 @@
+start
+  decNum<-0(integer);
+  binNum<-0(integer);
+  Declare Array bin of 100 integer;
+  i<-0(integer);
+
+  accept decNum;
+  
+  while(decNum>0)
+	bin[i]<-decNum%2;
+	decNum<-decNum/2;
+	i++;
+  end while;
+
+  for j<-i-1 to 0[step -1]
+	display bin[j];
+  end for;
+stop;
+  

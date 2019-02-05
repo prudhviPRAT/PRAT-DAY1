@@ -1,0 +1,12 @@
+start
+  num1<-0(integer);
+  num2<-0(integer);
+  sum<-0(integer);
+
+  accept num1,num2;
+
+  sum<-num1+num2;
+
+  display sum;
+stop;
+

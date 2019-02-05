@@ -1,0 +1,12 @@
+start
+  num<-0(integer);
+  i<-2;
+
+  accept num;
+
+  while(i<=num)
+	display i*i;
+	i<- i+2;
+  end while;
+stop;
+  

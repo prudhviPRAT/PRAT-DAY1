@@ -1,0 +1,23 @@
+start
+  numRows<-0(integer);
+  i<-1(integer);
+  j<-0(integer);
+  num<-1(integer);
+  a<-1(integer);
+  sign<- -1(integer);
+
+  accept numRows;
+
+  for i<-1 to numRows+1
+	for j<-1 to i
+		if(a%2==0) then
+			display a*a*sign;
+			a<-a+1;
+		else
+			display a*a;
+			a<-a+1;
+		end if;
+	end for;
+	display;
+  end for;
+stop;

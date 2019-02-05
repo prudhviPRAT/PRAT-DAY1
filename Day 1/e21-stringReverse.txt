@@ -1,0 +1,25 @@
+start
+  i<-0(integer);
+  j<-0(integer);
+  str<-null(String); 
+  ch<-null(char);
+
+  accept str;
+  size<-sizeOf(str);
+
+  Declare Array strArray of size char;
+
+  while(i<j)
+	for i<-0 to size
+		ch<-str[i];
+		for j<-size-1 to 0[step -1]
+			str[i]<-str[j];
+			str[j]<-ch;
+		end for;
+	end for;
+  end while;
+
+  for i<-0 to size-1
+	display str[i];
+  end for;
+stop;

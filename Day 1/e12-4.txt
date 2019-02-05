@@ -1,0 +1,18 @@
+start
+  num1<-1(integer);
+  num2<-4(integer);
+  num3<-7(integer);
+  num<-0(integer);
+  sum<-0(integer);
+
+  accept num;
+
+  display num1,num2,num3;
+  while(sum<=num)
+	sum=num1+num2+num3;
+	display sum;
+	num1<-num2;
+	num2<-num3;
+	num3<-sum;
+  end while;
+stop;
